@@ -742,8 +742,8 @@ print(a)</code></pre>
 ## 1     27.4     28.2</code></pre>
 <p>upper and lower edges of the 95 % confidence interval are 27.3 and 28.2</p>
 <p><strong>Hypothesis Testing:</strong></p>
-<p>Null hypothesis: There is no difference in Death in ICU between males and females</p>
-<p>Alternative hypothesis: There is difference in Death rates in ICU between males and females</p>
+<p>*Null hypothesis*: There is NO difference in Death rates in ICU between males and females</p>
+<p>*Alternative hypothesis*: There is difference in Death rates in ICU between males and females</p>
 <pre class="r"><code>nulldist &lt;- dataframe %&gt;%
   specify(formula =  icu_exp_flg ~ gender )%&gt;%
   hypothesize(null = &#39;independence&#39;)%&gt;%
